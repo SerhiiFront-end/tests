@@ -1,0 +1,27 @@
+.header {
+	@apply w-full my-[3vh] bg-gray-900 sticky top-0;
+}
+.headerList {
+	@apply flex justify-around;
+}
+.headerList li {
+	@apply text-2xl;
+}
+/* 
+			a {
+				@apply text-slate-300 px-3 text-center;
+				li {
+					@apply text-2xl;
+					@media (max-width: 768px) {
+						@apply text-base;
+					}
+				}
+				&:hover {
+					@apply ease-linear duration-500 bg-slate-500 rounded-md;
+				}
+			}
+			.activeStyle {
+				@apply bg-slate-500 rounded-md;
+			}
+		}
+} */

@@ -1,13 +1,16 @@
-import Links from '@/components/Header/Links'
 import styles from './header.module.css'
+import Link from "next/link";
+import HeaderButtonMenu from "@/ui/header/HeaderButton";
+
 export default function () {
-	return (
-		<header className={styles.header}>
-			<nav className='m-auto'>
-				<ul className={styles.headerList}>
-					<Links />
-				</ul>
-			</nav>
-		</header>
-	)
+    return (
+        <header className={styles.header}>
+            <div className={styles.header__wrapper}>
+                <Link href={""} className={styles.brand}>Home</Link>
+                <nav className={styles.nav}>
+                    <HeaderButtonMenu/>
+                </nav>
+            </div>
+        </header>
+    )
 }

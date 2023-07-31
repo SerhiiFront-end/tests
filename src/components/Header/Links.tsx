@@ -11,13 +11,13 @@ export default function Links() {
 					<Link
 						key={el.id}
 						href={el.path}
-						className='text-slate-300 px-3 text-center'
+						className='px-3 text-center hover:text-gray-950 hover:ease-in hover:duration-200'
 					>
 						<li
 							className={
 								activeSegment === el.targetSegment
-									? 'bg-slate-500 rounded-md'
-									: ''
+									? 'bg-slate-500 px-2'
+									: 'px-2'
 							}
 						>
 							{el.label}
@@ -25,6 +25,7 @@ export default function Links() {
 					</Link>
 				)
 			})}
+			<Link href={'login'} className='px-3 text-center hover:text-gray-950 hover:ease-in hover:duration-200'><li>Login</li></Link>
 		</>
 	)
 }

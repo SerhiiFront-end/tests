@@ -7,5 +7,5 @@
 }
 
 body {
-	@apply max-w-screen-xl m-auto;
+	@apply max-w-screen-xl m-auto bg-[#023a56] md:px-10 px-5;
 }
